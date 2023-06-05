@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Générateur Histoires</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/959481906/fr/vectoriel/en-agitant-sa-baguette-de-f%C3%A9e.jpg?s=612x612&w=0&k=20&c=Dzn9oQ9ayG2xmZcPeMMOL-uGwwPV3zbQLRRwRQrdbMk=">
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>Générateur d'Histoires</h1>
+    <form>
+      <label for="theme">Thème :</label>
+      <select id="theme" name="theme">
+        <option disabled selected hidden>Choisissez le thème</option>
+        <option value= "in the heart of the forest">Forêt</option>
+        <option value="in the heart of the mountain">Montagne</option>
+        <option value="in the depths of the ocean">Océan</option>
+      </select>
+      <br />
+      <label for="max_length">Longueur du texte (mots):</label>
+      <select id="max_length" name="max_length">
+        <option disabled selected hidden>Choisissez le nombre de mots</option>
+        <option value= "100">100</option>
+        <option value= "150">150</option>
+        <option value= "200">200</option>
+        <option value= "250">250</option>
+        <option value= "300">300</option>
+      </select>
+      <br />
+      <label for="num_stories">Nombre d'histoires :</label>
+      <select id="num_stories" name="num_stories">
+        <option disabled selected hidden>Choisissez le nombre d'histoires</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br />
+      <button type="button" onclick="generateStory()">Générer une histoire</button>
+    </form>
+    <div id="story">
+      <img id="loadingImage" src="/static/image/loading.gif" style="display: none;">
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

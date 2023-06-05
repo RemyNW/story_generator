@@ -1,0 +1,71 @@
+body {
+  background-image: url("https://www.broderie-diamant.art/img/cms/paysages/foret/Foret%20enchant%C3%A9%20furgasse.jpg");
+  background-size: cover;
+  font-family: 'Tangerine';
+}
+
+h1 {
+  color: rgba(215, 215, 0, 1);
+  font-size: 6.5em;
+  text-align: center;
+  margin-top: 20px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+  }
+
+  to {
+    text-shadow: 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00, 0 0 25px #ffff00, 0 0 30px #ffff00;
+  }
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+label {
+  color: green;
+  font-size: 2.5em;
+}
+
+select,
+input[type="number"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+div.story {
+  color: rgba(0, 80, 0, 1);
+  font-size: 2.7em;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+#loadingImage {
+  width: 125px;
+  height: 125px;
+  margin-top: 20px;
+}
